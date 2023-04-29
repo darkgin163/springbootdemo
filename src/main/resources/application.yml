@@ -1,0 +1,18 @@
+server:
+  # 服务器的HTTP端口，默认为80 need
+  port: 8080
+  servlet:
+    # 应用的访问路径
+    context-path: /
+  tomcat:
+    # tomcat的URI编码
+    uri-encoding: UTF-8
+
+# spring 配置
+spring:
+  # 模板引擎 need
+  thymeleaf:
+    prefix:
+      classpath: /templates   # 访问template下的html文件需要配置模板，映射
+    # 禁用缓存
+    cache: false
