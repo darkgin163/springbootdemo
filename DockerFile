@@ -1,0 +1,4 @@
+# From java image, version : 8
+FROM java:8
+COPY target/springbootdemo-0.0.1-SNAPSHOT.jar app.jarRUN bash -c "touch /springbootdemo-0.0.1-SNAPSHOT.jar"
+ENTRYPOINT ["java", "-jar", "springbootdemo-0.0.1-SNAPSHOT.jar"]
